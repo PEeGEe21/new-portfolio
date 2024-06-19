@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+
+* {
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth; /* Smooth scroll */
+}
+
+.services{
+  background-color: #fff;
+}
+
+
+.services-item{
+/* box-shadow: 0 0 25px 0 rgb(29 25 0 / 25%); */
+/* background: #181818; */
+background: #f2f2f2;
+/* box-shadow: 0 10px 20px rgb(0 0 0 / 10%) */
+}
+
+.services-item {
+  transition: all 0.4s ease;
+}
+
+.services-item:hover {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
+  transition: all 0.4s ease;
+}
+
+.services-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #000000 ;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 90px;
+  position: relative;
+  transition: all 0.5s;
+  opacity: .8;
+}
+
+.services-icon::before {
+  content: '';
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: block;
+  border: 2px solid rgba(0, 5, 5, 0.5);
+  transition: all 0.5s;
+  }
+
+.services-item-heading{
+  color: #333333;
+  font-weight: 700;
+  /* color: #fff; */
+}
+
+.services-item-text{
+  color:#333333;
+}
